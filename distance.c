@@ -16,7 +16,7 @@ void shortest_distance(float x1, float y1,
 }
  
  
- 
+
 // Driver Code
 int main()
 {
