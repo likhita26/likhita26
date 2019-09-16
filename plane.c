@@ -3,10 +3,7 @@
 #include <math.h>
 
 //Function to find the equation of the plane
-void equation_plane(float x1, float y1,  
-                    float z1, float x2,
-                    float y2, float z2,  
-                    float x3, float y3, float z3)
+void equation_plane(float x1, float y1, float z1, float x2, float y2, float z2, float x3, float y3, float z3)
 {
     float a1 = x2 - x1;
     float b1 = y2 - y1;
