@@ -36,5 +36,4 @@ int main()
     float z3 = 4;
     equation_plane(x1, y1, z1, x2, y2, z2, x3, y3, z3);
     return 0;
-   
 }
