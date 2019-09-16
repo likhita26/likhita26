@@ -2,9 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-
 //Function to find the equation of the plane
-
 void equation_plane(float x1, float y1,  
                     float z1, float x2,
                     float y2, float z2,  
@@ -23,8 +21,7 @@ void equation_plane(float x1, float y1,
     printf("equation of plane is %.2f x + %.2f"
         " y + %.2f z + %.2f = 0.",a,b,c,d);
     return;
-}
- 
+} 
 // Driver Code
 int main()
 {
