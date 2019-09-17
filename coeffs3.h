@@ -148,13 +148,11 @@ return c;
 
 
 //Defining the function for difference of matrices
-
 double **matmul(double **a, double **b, int m, int n, int p)
 {
 int i, j, k;
 double **c, temp =0;
 c = createMat(m,p);
-
  for(i=0;i<m;i++)
  {
   for(k=0;k<p;k++)
@@ -168,19 +166,16 @@ temp = 0;
   }
  }
 return c;
-
 }
 //End function for difference of matrices
 
 //Defining the function for transpose of matrix
-
 double **transpose(double **a,  int m, int n)
 {
 int i, j;
 double **c;
 //printf("I am here");
 c = createMat(n,m);
-
  for(i=0;i<n;i++)
  {
   for(j=0;j<m;j++)
@@ -190,7 +185,6 @@ c[i][j]= a[j][i];
   }
  }
 return c;
-
 }
 //End function for transpose of matrix
 
