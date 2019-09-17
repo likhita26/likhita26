@@ -5,7 +5,6 @@
 
 int  main() //main function begins
 {
-
 //Defining the variables
 int  m,n;//integers
 double **A, **B, **P, **d1, **d2, **d3,  **x1, **temp, **v, **l;
@@ -27,17 +26,12 @@ d2 = linalg_sub(P,B,3,1);
 
 //direction vector perpendicular to the plane
 v = matmul(d3,d2,3,3,1);
-
-
 l = matmul(temp,v,1,1,0);
-
-
 //Finding the norm
 float sh = linalg_norm(v,3);
 float kh = linalg_norm(l,1);
 
 //perpendicular distance
 printf("The perpendicular distance is %f" , sh / kh);
-
 return 0; 
 }
