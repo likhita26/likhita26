@@ -10,7 +10,7 @@ int  main() //main function begins
 {
 //Defining the variables
 double **A, **B, **P, **d2, **d3,  **x1, **temp, **v, **l;
-
+float s;
 //Given points
 A = loadtxt("./data/A.dat",3,1);
 B = loadtxt("./data/B.dat",3,1);
@@ -35,8 +35,9 @@ l = matmul(temp,v,1,3,1);
 //Finding the norm
 float k = linalg_norm(v,3);
 float r = linalg_norm(l,1);
+s = float (r/k);
 //perpendicular distance
-printf("The perpendicular distance is %f" , r / k);
+printf("The perpendicular distance is %f" , s);
 return 0; 
 }
 Matrix meshgrid(int len , int x, int y , int z);{
