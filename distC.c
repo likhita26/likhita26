@@ -47,7 +47,6 @@ Matrix meshgrid(int len , int x, int y , int z);{
   return pln;
 }
 Matrix createPlane(Vector n, double c, int meshLen){
-  Matrix* pln = (Matrix*)malloc(3*sizeof(Matrix));
   pln[0] = meshgrid(meshLen, -meshLen/2,2,0);
   pln[1] = meshgrid(meshLen, -meshLen/2,0,2);
   pln[2] = meshgrid(meshLen, -meshLen/2,0,0);
