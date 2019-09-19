@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include "coeffs3.h"
- typedef double** Matrix; typdef double** Vector;
+typedef double** Matrix; typdef double** Vector;
 Matirx meshgrid(int len, int x, int y, int z);
 void saveMat(Matrix mat,char*str,int m, int n);
 Matrix *createPlane(Vector n, double c , int meshLen);
@@ -15,7 +15,6 @@ float s;
 A = loadtxt("./data/A.dat",3,1);
 B = loadtxt("./data/B.dat",3,1);
 P = loadtxt("./data/P.dat",3,1);
-
 //Matrix equation
 d3 = loadtxt("./data/d3.dat",3,3);
 x1 = linalg_sub(P,A,3,1);
@@ -48,6 +47,7 @@ Matrix meshgrid(int len , int x, int y , int z);{
   return pln;
 }
 Matrix createPlane(Vector n, double c, int meshLen){
+ Matrix* pln = (Mztrix*)malloc(3*sizeof(Matrix));
   pln[0] = meshgrid(meshLen, -meshLen/2,2,0);
   pln[1] = meshgrid(meshLen, -meshLen/2,0,2);
   pln[2] = meshgrid(meshLen, -meshLen/2,0,0);
